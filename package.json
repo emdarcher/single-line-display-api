@@ -1,0 +1,23 @@
+{
+  "name": "single-line-display-api",
+  "version": "1.0.0",
+  "description": "API for a single line LED message display",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emdarcher/single-line-display-api.git"
+  },
+  "keywords": [
+    "LED"
+  ],
+  "author": "Ethan Durrant",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/emdarcher/single-line-display-api/issues"
+  },
+  "homepage": "https://github.com/emdarcher/single-line-display-api#readme"
+}
