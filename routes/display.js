@@ -75,7 +75,20 @@ exports.getDisplay = function(req, res, next){
 };
 
 exports.putDisplay = function(req, res, next){
-
+    if(req.params.displayString !== undefined){
+        display_data.displayString = req.params.displayString;
+    }
+    if(req.params.textColor !== undefined){
+        display_data.textColor = req.params.textColor;
+    }
+    if(req.params.textFont !== undefined){
+        display_data.textFont = req.params.textFont;
+    }
+    writeDisplay(display_data, function(err){
+        next.ifError(err);
+        res.json(200);
+        return next();
+    });
     
 };
 
