@@ -1,0 +1,20 @@
+#%RAML 0.8
+
+title: single-line-display-api
+baseUri: http://localhost:7575/display-api
+version: v1
+mediaType: application/json
+
+/display:
+  description: Write to the display
+  get:
+    description: Get details of what is displaying
+    responses:
+      200:
+        body:
+          example: !include details.example.json
+  put:
+    description: Put a string onto the display with some options
+    body:
+      example: !include details.example.json
+
