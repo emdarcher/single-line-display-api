@@ -1,0 +1,7 @@
+*.log
+*.dmp
+*.swp
+*.bin
+*.o
+node_modules/
+

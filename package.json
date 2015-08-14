@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/emdarcher/single-line-display-api/issues"
   },
-  "homepage": "https://github.com/emdarcher/single-line-display-api#readme"
+  "homepage": "https://github.com/emdarcher/single-line-display-api#readme",
+  "dependencies": {
+    "restify": "^3.0.3",
+    "serialport": "^1.7.4"
+  }
 }
