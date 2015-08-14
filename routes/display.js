@@ -49,18 +49,13 @@ function writeDisplay(data, cb) {
     var outStr = ""
             + '~128' //code number 128
             + '~f01' //file 01
-            + "A" //auto effect
+            + "A" //auto effect (bit of a hack to make a following effect work)
             + effects['immediate'] //immediate effect
             + colors[data.textColor] //color
             + fonts[data.textFont] //font
             + data.displayString //the string to display
             + "\r\r\r"; //ending
-    var outBuff = new Buffer(outStr);
-    
-    serialPort.on('data', function(data){
-        console.log('data recieved: ' + data);
-    });
-    console.log('sending data: \n' + outBuff);
+    console.log('sending data: \n' + outStr);
     serialPort.write(outStr, function(err, results){
         console.log('results: ' + results);
         return cb(err); 
