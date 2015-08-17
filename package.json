@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "bin":{
+  "bin": {
     "sl-display-server": "./server.js"
   },
   "repository": {
@@ -15,7 +15,7 @@
     "url": "git+https://github.com/emdarcher/single-line-display-api.git"
   },
   "keywords": [
-    "LED"
+    "LED", "display"
   ],
   "author": "Ethan Durrant",
   "license": "MIT",
@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/emdarcher/single-line-display-api#readme",
   "dependencies": {
+    "node-linux": "^0.1.2",
     "restify": "^3.0.3",
     "serialport": "^1.7.4"
   }
